@@ -30,14 +30,14 @@
 			</div>
 			<div class="footer-device">
 			<p style="font-family: 'Ubuntu', sans-serif;">
-				<span style="color: #b9b9b9;">
-					<?php /* 能保留下面两个链接吗？算是我一个小小的心愿吧~ */ ?>
-					    Theme <a href="https://2heng.xin/theme-sakura/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>
-				</span>
-			    <p>
-                    <img src="//cdn.jsdelivr.net/gh/MuenYu/open_cdn@1.4/statics/mashiro.best/upyun.png" width="50px" height="30px"/>
-                </p>
-			</p>
+					<span style="color: #b9b9b9;">
+						<?php /* 能保留下面两个链接吗？算是我一个小小的心愿吧~ */ ?>
+						Theme <a href="https://2heng.xin/theme-sakura/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>
+					</span>
+					<p>
+            <img src="//cdn.jsdelivr.net/gh/MuenYu/open_cdn@1.4/statics/mashiro.best/upyun.png" width="50px" height="30px"/>
+          </p>
+				</p>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
@@ -47,9 +47,9 @@
 		</div>
 		<div class="site-branding">
 			<?php if (akina_option('akina_logo')){ ?>
-			    <div class="site-title"><a href="<?php bloginfo('url');?>" ><img src="<?php echo akina_option('akina_logo'); ?>"></a></div>
+			<div class="site-title"><a href="<?php bloginfo('url');?>" ><img src="<?php echo akina_option('akina_logo'); ?>"></a></div>
 			<?php }else{ ?>
-			    <h1 class="site-title"><a href="<?php bloginfo('url');?>" ><?php bloginfo('name');?></a></h1>
+			<h1 class="site-title"><a href="<?php bloginfo('url');?>" ><?php bloginfo('name');?></a></h1>
 			<?php } ?>
 		</div>
 	</div><!-- m-nav-bar -->

@@ -92,21 +92,30 @@ if (!function_exists('akina_setup')):
         remove_action('wp_head', 'wp_generator'); //隐藏wordpress版本
         remove_filter('the_content', 'wptexturize'); //取消标点符号转义
 
-        //remove_action('rest_api_init', 'wp_oembed_register_route');
-        //remove_filter('rest_pre_serve_request', '_oembed_rest_pre_serve_request', 10, 4);
-        //remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
-        //remove_filter('oembed_response_data', 'get_oembed_response_data_rich', 10, 4);
-        //remove_action('wp_head', 'wp_oembed_add_discovery_links');
-        //remove_action('wp_head', 'wp_oembed_add_host_js');
+        remove_action('rest_api_init', 'wp_oembed_register_route');
+        remove_filter('rest_pre_serve_request', '_oembed_rest_pre_serve_request', 10, 4);
+        remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
+        remove_filter('oembed_response_data', 'get_oembed_response_data_rich', 10, 4);
+        remove_action('wp_head', 'wp_oembed_add_discovery_links');
+        remove_action('wp_head', 'wp_oembed_add_host_js');
         remove_action('template_redirect', 'rest_output_link_header', 11, 0);
 
         function coolwp_remove_open_sans_from_wp_core()
     {
             wp_deregister_style('open-sans');
+            add_action( 'wp_enqueue_scripts', 'wpassist_remove_block_library_css' );
             wp_register_style('open-sans', false);
             wp_enqueue_style('open-sans', '');
         }
         add_action('init', 'coolwp_remove_open_sans_from_wp_core');
+
+        /**
+         * Disable wp-block-library-css
+         */
+         function wpassist_remove_block_library_css()
+    {
+            wp_dequeue_style( 'wp-block-library' );
+         }
 
         /**
          * Disable the emoji's
@@ -609,9 +618,7 @@ function get_link_items()
 function gravatar_cn($url)
 {
     $gravatar_url = array('0.gravatar.com', '1.gravatar.com', '2.gravatar.com', 'secure.gravatar.com');
-    //return str_replace($gravatar_url, 'cn.gravatar.com', $url);
-    //官方服务器近期大陆访问 429，建议使用镜像
-    return str_replace( $gravatar_url, 'gravatar.2heng.xin', $url );
+    return str_replace($gravatar_url, 'cn.gravatar.com', $url);
 }
 add_filter('get_avatar_url', 'gravatar_cn', 4);
 
