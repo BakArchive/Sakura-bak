@@ -30,23 +30,26 @@
 			</div>
 			<div class="footer-device">
 			<p style="font-family: 'Ubuntu', sans-serif;">
-					<span style="color: #b9b9b9;">
-						<?php /* 能保留下面两个链接吗？算是我一个小小的心愿吧~ */ ?>
-						Theme <a href="https://2heng.xin/theme-sakura/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>
-					</span>
-				</p>
+				<span style="color: #b9b9b9;">
+					<?php /* 能保留下面两个链接吗？算是我一个小小的心愿吧~ */ ?>
+					    Theme <a href="https://2heng.xin/theme-sakura/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>
+				</span>
+			    <p>
+                    <img src="//cdn.jsdelivr.net/gh/MuenYu/open_cdn@1.4/statics/mashiro.best/upyun.png" width="50px" height="30px"/>
+                </p>
+			</p>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 	<div class="openNav no-select">
-		<div class="iconflat no-select">	 
+		<div class="iconflat no-select">
 			<div class="icon"></div>
 		</div>
 		<div class="site-branding">
 			<?php if (akina_option('akina_logo')){ ?>
-			<div class="site-title"><a href="<?php bloginfo('url');?>" ><img src="<?php echo akina_option('akina_logo'); ?>"></a></div>
+			    <div class="site-title"><a href="<?php bloginfo('url');?>" ><img src="<?php echo akina_option('akina_logo'); ?>"></a></div>
 			<?php }else{ ?>
-			<h1 class="site-title"><a href="<?php bloginfo('url');?>" ><?php bloginfo('name');?></a></h1>
+			    <h1 class="site-title"><a href="<?php bloginfo('url');?>" ><?php bloginfo('name');?></a></h1>
 			<?php } ?>
 		</div>
 	</div><!-- m-nav-bar -->
@@ -98,7 +101,7 @@
 <div class="changeSkin-gear no-select" style="bottom: -999px;">
     <div class="keys">
         <span id="open-skinMenu">
-		<i class="iconfont icon-gear inline-block rotating"></i>&nbsp; 切换主题 | SCHEME TOOL 
+		<i class="iconfont icon-gear inline-block rotating"></i>&nbsp; 切换主题 | SCHEME TOOL
         </span>
     </div>
 </div>
@@ -132,9 +135,9 @@
         </ul>
     </div>
     <div class="font-family-controls row-container">
-        <button type="button" class="control-btn-serif selected" data-mode="serif" 
+        <button type="button" class="control-btn-serif selected" data-mode="serif"
                 onclick="mashiro_global.font_control.change_font()">Serif</button>
-        <button type="button" class="control-btn-sans-serif" data-mode="sans-serif" 
+        <button type="button" class="control-btn-sans-serif" data-mode="sans-serif"
                 onclick="mashiro_global.font_control.change_font()">Sans Serif</button>
     </div>
 </div>
