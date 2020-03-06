@@ -618,7 +618,7 @@ function get_link_items()
 function gravatar_cn($url)
 {
     $gravatar_url = array('0.gravatar.com', '1.gravatar.com', '2.gravatar.com', 'secure.gravatar.com');
-    return str_replace($gravatar_url, 'cn.gravatar.com', $url);
+    return str_replace($gravatar_url, 'fdn.geekzu.org', $url);
 }
 add_filter('get_avatar_url', 'gravatar_cn', 4);
 
@@ -630,7 +630,7 @@ add_filter('avatar_defaults', 'mytheme_default_avatar');
 function mytheme_default_avatar($avatar_defaults)
 {
     //$new_avatar_url = get_template_directory_uri() . '/images/default_avatar.png';
-    $new_avatar_url = 'https://cn.gravatar.com/avatar/b745710ae6b0ce9dfb13f5b7c0956be1';
+    $new_avatar_url = 'https://fdn.geekzu.org/avatar/b745710ae6b0ce9dfb13f5b7c0956be1';
     $avatar_defaults[$new_avatar_url] = 'Default Avatar';
     return $avatar_defaults;
 }
