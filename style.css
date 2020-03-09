@@ -6926,7 +6926,6 @@ input[type=radio]:checked:before {
     margin: auto;
     font-family: Ubuntu, sans-serif;
     font-size: 80px;
-    text-transform: uppercase
 }
 
 .glitch {
