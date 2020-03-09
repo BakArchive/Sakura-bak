@@ -103,8 +103,8 @@ function upload_image(WP_REST_Request $request)
         $output = array('status' => 403,
             'success' => false,
             'message' => 'Unauthorized client.',
-            'link' => "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@<?php echo SAKURA_VERSION ?>/images/stop.png",
-            'proxy' => akina_option('cmt_image_proxy') . "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@<?php echo SAKURA_VERSION ?>/images/stop.png",
+            'link' => 'https://cdn.jsdelivr.net/gh/MuenYu/Sakura@3.3.6.1/images/stop.png',
+            'proxy' => akina_option('cmt_image_proxy') . 'https://cdn.jsdelivr.net/gh/MuenYu/Sakura@3.3.6.1/images/stop.png',
         );
         $result = new WP_REST_Response($output, 403);
         $result->set_headers(array('Content-Type' => 'application/json'));
@@ -157,7 +157,7 @@ function Chevereto_API($image)
         $status = $reply->status_code;
         $success = false;
         $message = $reply->error->message;
-        $link = "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@<?php echo SAKURA_VERSION ?>/images/default_d_h_large.gif";
+        $link = 'https://cdn.jsdelivr.net/gh/MuenYu/Sakura@3.3.6.1/images/default_d_h_large.gif';
         $proxy = akina_option('cmt_image_proxy') . $link;
     }
     $output = array(
@@ -199,7 +199,7 @@ function Imgur_API($image)
         $status = $reply->status;
         $success = false;
         $message = $reply->data->error;
-        $link = "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@<?php echo SAKURA_VERSION ?>/images/default_d_h_large.gif";
+        $link = 'https://cdn.jsdelivr.net/gh/MuenYu/Sakura@3.3.6.1/images/default_d_h_large.gif';
         $proxy = akina_option('cmt_image_proxy') . $link;
     }
     $output = array(
@@ -248,7 +248,7 @@ function SMMS_API($image)
         $status = 400;
         $success = false;
         $message = $reply->message;
-        $link = "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@<?php echo SAKURA_VERSION ?>/images/default_d_h_large.gif";
+        $link = 'https://cdn.jsdelivr.net/gh/MuenYu/Sakura@3.3.6.1/images/default_d_h_large.gif';
         $proxy = akina_option('cmt_image_proxy') . $link;
     }
     $output = array(

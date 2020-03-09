@@ -58,7 +58,7 @@ function optionsframework_options()
     // 背景默认值
     $background_defaults = array(
         'color' => '',
-        'image' => "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@<?php echo SAKURA_VERSION ?>/images/hd.png",
+        'image' => "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@3.3.6.1/images/hd.png",
         'repeat' => 'repeat',
         'position' => 'top center',
         'attachment' => 'scroll');

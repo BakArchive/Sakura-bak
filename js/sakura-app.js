@@ -56,13 +56,13 @@ function removeCookie(name) {
 function imgError(ele, type) {
     switch (type) {
         case 1:
-            ele.src = "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@<?php echo SAKURA_VERSION ?>/images/Transparent_Akkarin.th.jpg";
+            ele.src = "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@3.3.6.1/images/Transparent_Akkarin.th.jpg";
             break;
         case 2:
             ele.src = 'https://fdn.geekzu.org/avatar/?s=80&d=mm&r=g';
             break;
         default:
-            ele.src = "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@<?php echo SAKURA_VERSION ?>/images/image-404.png";
+            ele.src = "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@3.3.6.1/images/image-404.png";
     }
 }
 

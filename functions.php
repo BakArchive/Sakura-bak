@@ -584,7 +584,7 @@ function get_the_link_items($id = null)
             }
 
             if (empty($bookmark->link_image)) {
-                $bookmark->link_image = "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@<?php echo SAKURA_VERSION ?>/images/Transparent_Akkarin.th.jpg";
+                $bookmark->link_image = "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@3.3.6.1/images/Transparent_Akkarin.th.jpg";
             }
 
             $output .= '<li class="link-item"><a class="link-item-inner effect-apollo" href="' . $bookmark->link_url . '" title="' . $bookmark->link_description . '" target="_blank" rel="friend"><img class="lazyload" onerror="imgError(this,1)" data-src="' . $bookmark->link_image . '" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.2/img/svg/loader/trans.ajax-spinner-preloader.svg"><span class="sitename">' . $bookmark->link_name . '</span><div class="linkdes">' . $bookmark->link_description . '</div></a></li>';
