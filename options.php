@@ -58,7 +58,7 @@ function optionsframework_options()
     // 背景默认值
     $background_defaults = array(
         'color' => '',
-        'image' => 'https://view.moezx.cc/images/2018/12/23/knights-of-the-frozen-throne-8k-qa.jpg',
+        'image' => "https://cdn.jsdelivr.net/gh/MuenYu/Sakura@<?php echo SAKURA_VERSION ?>/images/hd.png",
         'repeat' => 'repeat',
         'position' => 'top center',
         'attachment' => 'scroll');
@@ -813,7 +813,7 @@ function optionsframework_options()
         'name' => __('Other custom panel styles(CSS)', 'sakura'), /*其他自定义面板样式(CSS)*/
         'desc' => __('If you need to adjust other styles of the panel, put the style here.', 'sakura'), /*如果还需要对面板其他样式进行调整可以把style放到这里*/
         'id' => 'dash_scheme_css_rules',
-        'std' => '#adminmenu .wp-has-current-submenu .wp-submenu a,#adminmenu .wp-has-current-submenu.opensub .wp-submenu a,#adminmenu .wp-submenu a,#adminmenu a.wp-has-current-submenu:focus+.wp-submenu a,#wpadminbar .ab-submenu .ab-item,#wpadminbar .quicklinks .menupop ul li a,#wpadminbar .quicklinks .menupop.hover ul li a,#wpadminbar.nojs .quicklinks .menupop:hover ul li a,.folded #adminmenu .wp-has-current-submenu .wp-submenu a{color:#f3f2f1}body{background-image:url(https://view.moezx.cc/images/2019/04/21/windows10-2019-4-21-i3.jpg);background-size:cover;background-repeat:no-repeat;background-attachment:fixed;}#wpcontent{background:rgba(255,255,255,.8)}',
+        'std' => '#adminmenu .wp-has-current-submenu .wp-submenu a,#adminmenu .wp-has-current-submenu.opensub .wp-submenu a,#adminmenu .wp-submenu a,#adminmenu a.wp-has-current-submenu:focus+.wp-submenu a,#wpadminbar .ab-submenu .ab-item,#wpadminbar .quicklinks .menupop ul li a,#wpadminbar .quicklinks .menupop.hover ul li a,#wpadminbar.nojs .quicklinks .menupop:hover ul li a,.folded #adminmenu .wp-has-current-submenu .wp-submenu a{color:#f3f2f1}#wpcontent{background:rgba(255,255,255,.8)}',
         'type' => 'textarea');
 
     $options[] = array(
