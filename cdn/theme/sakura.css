@@ -155,34 +155,6 @@ h1.entry-title {
   color: white;
 }
 
-.entry-content h1,
-.entry-content h2,
-.entry-content h3,
-.entry-content h4,
-.entry-content h5,
-.entry-content h6 {
-    margin-bottom: 16px;
-}
-
-.entry-content h1 {
-    margin-top: 50px;
-}
-.entry-content h2 {
-    margin-top: 25px;
-}
-.entry-content h3 {
-    margin-top: 20px;
-}
-.entry-content h4 {
-    margin-top: 15px;
-}
-.entry-content h5 {
-    margin-top: 10px;
-}
-.entry-content h6 {
-    margin-top: 10px;
-}
-
 /*fix code block*/
 .entry-content pre th, .entry-content pre td {
     padding: 0;
