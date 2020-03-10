@@ -1881,8 +1881,8 @@ $(function () {
     $(document).on("click", ".specsZan", function () {
         $(this).postLike();
     });
-    console.log("%c Mashiro %c", "background:#24272A; color:#ffffff", "", "https://2heng.xin/");
-    console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/mashirozx");
+    console.log("%c 真白的年轮面包 %c", "background:#24272A; color:#ffffff", "", "https://mashiro.best/");
+    console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/muenyu");
 });
 var isWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1,
     isOpera = navigator.userAgent.toLowerCase().indexOf('opera') > -1,
