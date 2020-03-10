@@ -92,7 +92,6 @@
 		<div class="search_close"></div>
 	</form>
 	<!-- search end -->
-<?php wp_footer(); ?>
 <?php if(akina_option('site_statistics')){ ?>
 <div class="site-statistics">
 <script type="text/javascript"><?php echo akina_option('site_statistics'); ?></script>
@@ -142,6 +141,7 @@
     </div>
 </div>
 <canvas id="night-mode-cover"></canvas>
+<?php wp_footer(); ?>
 <?php if (akina_option('sakura_widget')) : ?>
 	<aside id="secondary" class="widget-area" role="complementary" style="left: -400px;">
     <div class="heading"><?php _e('Widgets') /*小工具*/ ?></div>
