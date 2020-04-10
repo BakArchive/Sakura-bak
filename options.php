@@ -910,18 +910,6 @@ function optionsframework_options()
         'type' => 'typography ');
 
     $options[] = array(
-        'name' => __('Check for Updates', 'sakura'), /*检查更新*/
-        'desc' => '<a href="https://github.com/mashirozx/Sakura/releases/latest">Download the latest version</a>',
-        'id' => "release_info",
-        'std' => "tag",
-        'type' => "images",
-        'options' => array(
-            'tag' => 'https://img.shields.io/github/release/mashirozx/Sakura.svg?style=flat-square',
-            'tag2' => 'https://img.shields.io/github/commits-since/mashirozx/Sakura/v' . SAKURA_VERSION . '/dev.svg?style=flat-square',
-        ),
-    );
-
-    $options[] = array(
         'name' => __('Footer float music player', 'sakura'), /*页脚悬浮播放器*/
         'desc' => __('If you don\'t need the player just leave it blank.Fill in the "song list" ID of Netease Cloud Music, eg: https://music.163.com/#/playlist?id=2288037900 The ID is 2288037900', 'sakura'), /*如果不需要播放器留空即可。填写网易云音乐的「歌单」ID，eg：https://music.163.com/#/playlist?id=2288037900的ID是2288037900*/
         'id' => 'playlist_id',
